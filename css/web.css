@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+}/*清楚默认属性*/
+
+body{
+	background: url(../images/body_bg.jpg) no-repeat;
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+
+#top{
+	width: 100%;
+	height: 70px;
+}
+
+#top_content{
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+	background:url(../images/top_bg.png) repeat-x;
+}
+
+#top_content_left,{
+	height: 70px;
+}
+
+/*#top_content_right{
+	float:left;
+	height: 70px;
+}*/
+
+#top_content_left{
+	margin: 0 auto;/*更改后使信息滚动区居中显示*/
+	width: 820px;
+}
+
+/*#top_content_right{
+	width: 380px;
+}*//*搜索框*/
+
+#top_content_left marquee{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 70px;
+	/*letter-spacing: 8px;*/
+	color: blue;
+}/*信息滚动*/
+
+#top_content_right_main{
+	height: 30px;
+	margin: 25px 10px 0 80px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+/*.search_text{
+	width: 175px;
+	height: 25px;
+	background-color: #ffffff;
+}
+
+.search_found{
+	width: 45px;
+	height: 28px;
+	float:right;
+	cursor: pointer;
+	border: 2px solid black;
+}
+
+.search_found:hover{
+	background-color: #0AABF5;
+
+}*//*搜索框*/
+/*顶部CSS样式*/
+
+#warp{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#logo{
+	height: 170px;
+	background: url(../images/banner.png);
+}/*logo区样式*/
+
+#nav{
+	height: 45px;
+	background-color: #0AABF5;
+}
+
+#nav_left{
+	width: 880px;
+	height: 45px;
+	float: left;
+}
+
+#nav_right{
+	width: 180px;
+	height: 25px;
+	margin-top: 13px;
+	float: right;
+	font-size: 16px;
+	color: #FFF;
+}
+
+#nav_left li{
+	width: 155px;
+	border-right:1px solid #e8e8e8;
+	text-align: center;
+	line-height: 45px;
+	list-style: none;
+	float: left;
+}
+
+#nav_left li:hover{
+	background-color: #F60;
+}
+
+#nav_left a:link,#nav_left a:visited{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 16px;
+}/*导航区*/
+
+#content{
+	height: 598px;
+	border-top: 2px solid black;
+}
+
+#content_left,#content_right{
+	width: 600px;
+	height: 598px;
+	float: left;
+	background-color: #ffffff;
+}
+
+.content_all_up,.content_all_down{
+	width: 580px;
+	height: 280px;
+	margin: 12px 10px;
+}
+
+.title{
+	width: 580px;
+	height: 25px;
+	background:url(../images/list_title.png) repeat-x;
+}
+
+.title_left{
+	width: 70%;
+	font-size: 15px;
+	line-height: 25px;
+	padding-left: 20px;
+	color: #FFF;
+	float: left;
+}
+
+.title_right{
+	width: 12%;
+	float: right;
+}
+
+.title_right a{
+	text-decoration: none;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 16px;
+}
+
+.title_right a:hover{
+	text-decoration:underline;
+	color: #FFF;
+}
+
+.message{
+	margin-top: 25px;
+}
+
+.message li{
+	height: 22px;
+	font-size: 15px;
+	list-style-type: none;
+	background: url(../images/book.png) no-repeat;
+	padding-left: 30px;
+	margin: 18px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.message li span{
+	float: right;
+	color: #666;
+}
+
+.message a:link,.message a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+.message a:hover,.message a:active{
+	color: #F60;
+}/*content结束*/
+
+#footer{
+	width: 100%;
+	height: auto;
+	min-width: 1200px;
+	background-color: #49b9f1;
+}
+
+#footer_content{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	/*letter-spacing: 5px;*/
+	line-height: 33px;
+	padding: 10px 0;
+	color: #FFFFFF;
+}
+
+/*以下为通知公告模板的CSS样式*/
+#list{
+	min-height: 600px;
+	_height:600px;/*解决在IE6下的min—height不兼容问题*/
+	background-color: #ededed;
+	width: 100%;
+	overflow: hidden;/*用于清除父级元素收到子元素浮动的影响*/
+}
+
+#list_main{
+	width: 1001px;
+	min-height: 570px;
+	float: right;
+	border-right: 2px solid #e8e8e8;
+	_height:570px;/*解决在IE6下的min—height不兼容问题*/
+	background-color: #ffffff;
+	padding-bottom: 30px;
+}/*详细页面的父级标签*/
+
+#list_main_title{
+	width: 970px;
+	height: 65px;
+	border-bottom: 2px dotted #e8e8e8;
+	margin:55px 15px;
+}
+
+#list_main_title a:link,#list_main_title a:visited{
+	text-decoration: none;
+	font-size: 14px;
+	color: #666;
+}
+
+#list_main_title h2{
+	text-align: center;
+	font-size: 18px;
+	color: #990000;
+	margin-top: 16px;
+}
+
+#list_main_box{
+	width: 970px;
+	padding-left: 20px;
+	line-height: 35px;
+}
+
+#list_main_box p{
+	text-indent: 2em;
+	/*letter-spacing: 3px;*/
+}
+
+#list_main_box h3{
+	font-size: 18px;
+	color:#7B0202;
+	font-weight: bold;
+}
+
+#list_main_box span{
+	float: right;
+}
+
+#list_main_box a:link,#l,#list_main_box a:visited{
+	text-decoration: none;
+}
+
+#list_main_box a:hover,#list_main_box a:active{
+	text-decoration: underline;
+	color: #F60;
+}
+
+/*以下为规章制度type样式*/
+#list_type{
+	width: 178px;
+	float: left;
+	margin: 40px 0 0 10px;
+}
+
+#list_type h2{
+	height: 35px;
+	width: 160px;
+	padding-left: 10px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #990000;
+	border-bottom: 2px solid #990000;
+}
+
+#list_type_content{
+	margin-top: 40px;
+}
+
+#list_type_content li{
+	height: 35px;
+	padding-left: 15px;
+	line-height: 35px;
+	border-bottom: 1px dotted #666666;
+	font-size: 14px;
+
+}
+
+#list_type_content a:link,#list_type_content a:visited{
+	text-decoration: none;
+	color: #666666;
+}
+
+#list_type_content a:hover,#list_type_content a:active{
+	color: #F60
+}/*rules样式结束*/
+
+/*以下为builtlearn_more&&notice_more样式*/
+.more_title{
+	width: 980px;
+	height: 25px;
+	margin: 60px 0 0 10px;
+	overflow: hidden;
+	background:url(../images/list_title.png) repeat-x;
+}
+
+#page{
+	height: 40px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#page a{
+	display: inline-block;/*解决在兼容模式和IE8模式下的高度不能正确显示的问题；*/
+	border: 2px solid #e8e8e8;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+}
+
+#page a:link,#page a:visited{
+	color: #000;
+}
+
+#page a:hover,#page a:active{
+	color: #FFF;
+	background-color: #F60;
+}
+
+
+
+
+
